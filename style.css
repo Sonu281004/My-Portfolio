@@ -294,6 +294,12 @@ section h2::after {
   animation: slideFadeIn 1s ease forwards;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+.projects-grid a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 
 .certificate-card:hover {
   transform: translateY(-10px);
@@ -319,11 +325,25 @@ section h2::after {
   color: #222;
 }
 
+h3 a {
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+h3 a:hover,
+h3 a:focus {
+  color: #00d9ff;
+  text-decoration: underline;
+}
+
+
 .certificate-card p {
   color: #555;
   font-size: 1rem;
   line-height: 1.6;
 }
+
 
 /* Animations */
 @keyframes slideFadeIn {
@@ -385,6 +405,19 @@ section h2::after {
   color: #0077b5;
   text-decoration: underline;
 }
+
+a[href^="mailto:"] {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a[href^="mailto:"]:hover {
+  color: #00d9ff;
+  text-decoration: underline;
+}
+
 
 /* Footer */
 footer {
